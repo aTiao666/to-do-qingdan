@@ -1,0 +1,10 @@
+# Locally compiled application
+/To do 清单.exe
+*.pdb
+*.tmp
+
+# Editor and OS files
+.vs/
+.vscode/
+Thumbs.db
+.DS_Store
