@@ -533,6 +533,8 @@ namespace CrayonTodo
                 {
                     Region old = control.Region; control.Region = new Region(path); if (old != null) old.Dispose();
                 }
+                // The old rounded border may otherwise be retained inside an enlarged control.
+                control.Invalidate(true);
             };
             control.SizeChanged += delegate { resize(); }; resize();
         }
